@@ -1,0 +1,149 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #0A3871;
+    background-color: #E5E5E5;
+    padding: 2rem;
+}
+
+.imagem {
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.lupa {
+    float: right;
+    margin-right: 30px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #E5E5E5;
+    border-radius: 4px;
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    height: 10rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #E5E5E5;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+select {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.25rem;
+    border-radius: 4px;
+    border: 1px solid #E5E5E5;
+    font-size: 1rem;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    border: none;
+    background-color: #0A3871;
+    color: #E5E5E5;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #D8DFE8;
+    color: #0A3871;
+}
+
+button:disabled {
+    background-color: #E5E5E5;
+    cursor: not-allowed;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 320px) {
+    .imagem {
+      flex-direction: column;
+      display: none;
+    }
+  
+    .lupa {
+      margin-top: 1rem;
+      display:none;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    label,
+    textarea,
+    select,
+    button {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 1377px) {
+    .imagem {
+      gap: 2rem;
+      display:none;
+    }
+  
+    .lupa {
+      margin-right: 2rem;
+      display:none;
+    }
+  
+    h1 {
+      font-size: 2.5rem; 
+    }
+  
+    label,
+    textarea,
+    select,
+    button {
+      font-size: 1rem;
+    }
+  }

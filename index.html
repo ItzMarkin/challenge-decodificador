@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge - ONE</title>
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <header>
+        <img class="imagem" src="./assets/logo-alura.png" alt="Logo da Alura">
+        <h1>Decodificador de texto</h1>
+        <h6>*Somente letras minúsculas, sem acentos e caractéres especiais*</h6>
+    </header>
+    
+    <div class="lupa">
+        <img class="lupa" src="./assets/lupa.png" alt="Desenho de um garoto olhando por uma lupa">
+    </div>
+    
+    <main>
+        <label for="text">Digite o texto:</label>
+        <textarea id="text"></textarea><br>
+
+        <label for="operation">Escolha a operação:</label>
+        <select id="operation">
+            <option value="encrypt">Encriptar</option>
+            <option value="decrypt">Decriptar</option>
+        </select><br>
+
+        <button onclick="processText()">Processar</button><br>
+
+        <label for="result">Resultado:</label>
+        <textarea id="result" readonly></textarea><br>
+
+        <button onclick="copyToClipboard()">Copiar texto</button>
+        
+    </main>
+    
+    <footer>
+        <p>Desenvolvido por Marcos Nogueira.</p>
+    </footer>
+   
+    <script src="app.js" defer></script>
+</body>
+</html>
